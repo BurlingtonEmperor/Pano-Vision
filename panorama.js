@@ -4,6 +4,12 @@ let isUserInteracting = false, onPointerDownMouseX = 0, onPointerDownMouseY = 0,
 init();
 animate();
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const rumorLoc = urlParams.get('loc');
+
+let panoSrc;
+
 function init() {
   const container = document.body;
 
@@ -16,7 +22,19 @@ function init() {
   // Invert the sphere to view from inside
   geometry.scale(-1, 1, 1);
 
-  const texture = new THREE.TextureLoader().load('https://burlingtonemperor.github.io/building_photos_archive/panorama/york.jpg'); // Replace with your image
+  switch (rumorLoc) {
+    default:
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/york.jpg";
+      break;
+    case "regan":
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/regan.jpg";
+      break;
+    case "wildwood":
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/wildwood.jpg";
+      break;
+  }
+
+  const texture = new THREE.TextureLoader().load(panoSrc); // Replace with your image
   const material = new THREE.MeshBasicMaterial({ map: texture });
 
   sphere = new THREE.Mesh(geometry, material);
