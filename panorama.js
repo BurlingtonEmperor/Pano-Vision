@@ -1,14 +1,14 @@
 let scene, camera, renderer, sphere;
 let isUserInteracting = false, onPointerDownMouseX = 0, onPointerDownMouseY = 0, lon = 180, onPointerDownLon = 0, lat = 0, onPointerDownLat = 0;
 
-init();
-animate();
-
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const rumorLoc = urlParams.get('loc');
 
 let panoSrc;
+
+init();
+animate();
 
 function init() {
   const container = document.body;
