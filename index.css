@@ -1,0 +1,14 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+#look-notice {
+  z-index: 1000;
+  position: absolute;
+}
