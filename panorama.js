@@ -32,6 +32,18 @@ function init() {
     case "wildwood":
       panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/wildwood.jpg";
       break;
+    case "target1":
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/target_1.jpg";
+      break;
+    case "target2":
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/target_2.jpg";
+      break;
+    case "target3":
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/target_3.jpg";
+      break;
+    case "michaels":
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/michaels.jpg";
+      break;
   }
 
   const texture = new THREE.TextureLoader().load(panoSrc); // Replace with your image
