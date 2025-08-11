@@ -44,6 +44,12 @@ function init() {
     case "michaels":
       panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/michaels.jpg";
       break;
+    case "3rdave1":
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/ave3_1.jpeg";
+      break;
+    case "3rdave2":
+      panoSrc = "https://burlingtonemperor.github.io/building_photos_archive/panorama/ave3_2.jpeg";
+      break;
   }
 
   const texture = new THREE.TextureLoader().load(panoSrc); // Replace with your image
