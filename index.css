@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "FSEX300";
+  src: url("FSEX300.ttf");
+}
+
 body, html {
   margin: 0;
   height: 100%;
   overflow: hidden;
+}
+
+body {
+  font-family: "FSEX300";
 }
 
 canvas {
