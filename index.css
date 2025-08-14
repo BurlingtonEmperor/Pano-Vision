@@ -17,6 +17,11 @@ canvas {
   display: block;
 }
 
+p {
+  margin: 0;
+  font-size: 5vh;
+}
+
 #look-notice {
   z-index: 1000;
   position: absolute;
