@@ -46,12 +46,13 @@ p {
   caret-color: transparent; 
 }
 
-#console {
+#console, #camera {
   width: 90%;
   height: 90%;
   background-color: rgb(41, 41, 215);
   color: #90b3f4;
   margin: 0;
+  overflow-y: auto;
 }
 
 #user-input {
@@ -60,4 +61,8 @@ p {
 
 #user-area {
   display: flex;
+}
+
+#camera {
+  display: none;
 }

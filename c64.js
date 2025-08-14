@@ -9,3 +9,12 @@ const userInput = document.getElementById("user-input");
 //     consoleOutput.innerHTML += "<p>" + user_true_input + "</p>";
 //   }
 // });
+
+function addConsoleOutput (outputContent) {
+  consoleOutput.innerHTML += "<p>" + outputContent + "</p>";
+}
+
+// pre-programmed stuff
+setTimeout(function () {
+  addConsoleOutput("Options Below");
+}, 700);
