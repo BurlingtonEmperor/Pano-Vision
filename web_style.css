@@ -63,6 +63,24 @@ p {
   display: flex;
 }
 
-#camera {
+#camera, #button-options {
   display: none;
+}
+
+#camera {
+  background-image: url("pixels.gif");
+  background-size: cover;
+}
+
+.button {
+  border: 1px solid white;
+  margin: auto;
+  text-align: center;
+  width: 30%;
+  user-select: none;
+}
+
+.button:hover {
+  background-color: white;
+  cursor: pointer;
 }
