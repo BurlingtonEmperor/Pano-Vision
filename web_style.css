@@ -82,6 +82,7 @@ p {
 #camera {
   background-image: url("pixels.gif");
   background-size: cover;
+  background-position: center;
 }
 
 .button {
